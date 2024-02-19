@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <main>
+    <main id="mainSection" class="">
         <nav class="raleway mx-20 ">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -35,7 +35,7 @@
                             <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="btn btn-ghost text-2xl font-semibold">Sky-Paribahan</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -265,7 +265,7 @@
                             class="input input-bordered input-md w-full max-w-xs" />
                         <br>
                         <button
-                            class="btn my-4  btn-active w-3/4 btn-neutral text-black text-xl bg-[#1DD100]  ">Next</button>
+                          id="nextBtn"  class="  btn my-4  btn-active w-3/4 btn-neutral text-black text-xl bg-[#1DD100]  ">Next</button>
                     </div>
                 </div>
 
@@ -277,14 +277,14 @@
     </main>
 
 
-    <section class="h-screen bg-[#F2F1F1] ">
-            <div class="h-2/3 w-1/2 bg-white mt-32 rounded-xl text-center  mx-auto  p-10 gap-4">
+    <section id="successSection" class="h-screen bg-[#F2F1F1] hidden ">
+            <div class="h-2/3 w-1/2 bg-white  rounded-xl text-center  mx-auto  p-10 gap-4">
                 <img class="mx-auto my-4" src="images/success.png" alt="">
                 <h1 class="text-3xl text-[#27AE60] font-bold m-4">SUCCESS</h1>
                 <p class="m-4">Thank you for Booking Our Bus Seats. <br>
                     We are working hard to find the best service and deals for you.</p>
                 <p class="text-gray-500">Shortly you will find a confirmation in your email.</p>
-                <button class="btn btn-success w-52 m-4 text-white">Continue</button>
+                <button id="successBtn" class="btn btn-success w-52 m-4 text-white">Continue</button>
             </div>
     </section>
 

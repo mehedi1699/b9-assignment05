@@ -26,7 +26,7 @@ for (const ticket of allTickets) {
 
         const grandPricePlace = document.getElementById("totalPrice");
         grandPricePlace.innerText = grandPrice;
-        const seatClassType = "1st Class"
+        const seatClassType = "Economoy"
 
         const selectedContainer = document.getElementById("forPlaceTicket");
         const li = document.createElement("li");
@@ -56,4 +56,34 @@ function setInnerText(id, value) {
 function setBgColorById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400');
+}
+
+const nextBtnSet= document.getElementById("nextBtn");
+
+nextBtnSet.addEventListener("click",function (){
+    console.log("i am connecter")
+    hideElementById("mainSection");
+    successSection
+    showElementById("successSection")
+})
+
+const successBtnSet= document.getElementById("successBtn");
+
+successBtnSet.addEventListener("click",function (){
+    showElementById("mainSection");
+
+    hideElementById("successSection")
+})
+
+
+
+
+function showElementById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
+}
+
+function hideElementById(elementId){
+    const element= document.getElementById(elementId);
+    element.classList.add('hidden');
 }
