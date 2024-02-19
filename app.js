@@ -9,17 +9,22 @@ for (const ticket of allTickets) {
         count = count - 1;
         totalSeat = totalSeat + 1;
 
+        
+
         document.getElementById("seatCount").innerText = count;
         document.getElementById("TotalSeatCount").innerText = totalSeat;
 
         setInnerText("seatCount", count);
         const seatName = e.target.innerText
 
+        
+        setBgColorById(seatName);
+
         const price = document.getElementById("price").innerText;
         const seatPrice = parseInt(price);
-        const grandPrice= seatPrice * totalSeat ;
+        const grandPrice = seatPrice * totalSeat;
 
-        const grandPricePlace= document.getElementById("totalPrice");
+        const grandPricePlace = document.getElementById("totalPrice");
         grandPricePlace.innerText = grandPrice;
         const seatClassType = "1st Class"
 
@@ -27,26 +32,28 @@ for (const ticket of allTickets) {
         const li = document.createElement("li");
         const p1 = document.createElement("p");
         p1.innerText = seatName;
-        
+
         const p2 = document.createElement("p");
         p2.innerText = seatClassType
-        
+
         const p3 = document.createElement("p");
-         p3.innerText = seatPrice;
-        
+        p3.innerText = seatPrice;
+
 
         li.appendChild(p1);
         li.appendChild(p2);
         li.appendChild(p3);
         selectedContainer.appendChild(li);
-        
+
+
+
     })
 }
 
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
 }
-// function setBgColorById(elementId){
-//     const element = document.getElementById(elementId);
-//     element.classList.add('bg-orange-400');
-// }
+function setBgColorById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
+}
