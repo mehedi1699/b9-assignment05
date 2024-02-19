@@ -9,3 +9,15 @@
 .hero {
     background-image: url('images/banner.png');
 }
+
+li{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px;
+  font-size: large;
+  color: black;
+  gap: 24px;
+ 
+
+}

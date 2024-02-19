@@ -112,7 +112,7 @@
                             </div>
                         </div>
                         <div class="btn btn-active btn-neutral text-black text-xl bg-green-200  ">
-                            <img class="" src="icon/seat.png" alt=""> <span>40</span> Seates
+                            <img class="" src="icon/seat.png" alt=""> <span id="seatCount">16</span> Seates
                         </div>
                     </div>
 
@@ -145,7 +145,7 @@
                     class="bg-[#FFFFFF] w-96 border-l-4 rounded-r-xl border-dotted text-center border-green-400 p-10 rounded-l-3xl">
 
                     <img class="mx-auto" src="icon/fare.png" alt="">
-                    <h3 class="raleway text-xl font-bold">550 Taka</h3>
+                    <h3  class="raleway text-xl font-bold"> <span id="price">550</span> Taka</h3>
                     <p class="text-xl text-gray-600 ">Per Seat</p>
 
                 </div>
@@ -167,23 +167,23 @@
                         <h3 class="text-green-600 p-2 font-bold "> Selected</h3>
                     </div>
                 </div>
-                <div class="m-10 p-10   grid grid-rows-4 grid-flow-col gap-4 ">
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="A1">A1</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="A2">A2</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="A3">A3</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="A4">A4</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="B1">B1</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="B2">B2</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="B3">B3</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="B4">B4</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="C1">C1</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="C2">C2</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="C3">C3</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="C4">C4</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="D1">D1</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="D2">D2</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="D3">D3</h3></div>
-                    <div class="w-24 h-8 text-center rounded-md bg-gray-400"><h3 id="D4">D4</h3></div>
+                <div class="m-10 p-10   grid grid-cols-4 grid-flow-row gap-4 ">
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="A1">A1</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="A2">A2</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="A3">A3</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="A4">A4</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="B1">B1</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="B2">B2</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="B3">B3</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="B4">B4</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="C1">C1</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="C2">C2</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="C3">C3</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="C4">C4</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="D1">D1</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="D2">D2</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="D3">D3</h3></div>
+                    <div class=" tickets w-24 h-8 text-center rounded-md bg-gray-400"><h3 class="seatNumbers" id="D4">D4</h3></div>
                 </div>
 
             </div>
@@ -193,14 +193,21 @@
             <div class="w-3/5 p-4 m-4">
                 <h1 class="realway text-2xl text-black my-4">Select Your Seat</h1>
                 <div class="bg-gray-200 p-4 rounded-xl">
-                    <div class="flex justify-between border-b-2 ">
-                        <h3 class="text-xl text-black font-semibold">Seat <span>0</span></h3>
-                        <h3 class="text-xl text-black font-semibold">Class</h3>
-                        <h3 class="text-xl text-black font-semibold">Price</h3>
+                    <div>
+                        <div class="flex justify-between border-b-2 ">
+                            <h3 class="text-xl text-black font-semibold">Seat <span id="TotalSeatCount">0</span></h3>
+                            <h3 class="text-xl text-black font-semibold">Class</h3>
+                            <h3 class="text-xl text-black font-semibold">Price</h3>
+                        </div>
+                       <div id="ticket-buy-container">
+                        <ul id="forPlaceTicket">
+
+                        </ul>
+                       </div>
                     </div>
                     <div class="flex justify-between my-4">
                         <h3 class="text-xl text-black font-semibold">Total Prive:</h3>
-                        <h3 class="text-xl text-black font-semibold">BDT: 000</h3>
+                        <h3 class="text-xl text-black font-semibold">BDT: <span id="totalPrice">0</span></h3>
                     </div>
                     <div>
                         <input type="text" placeholder="Have any copupon?" class="input input-bordered input-accent w-full max-w-xs" />
@@ -223,6 +230,7 @@
 
     </section>
     </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
